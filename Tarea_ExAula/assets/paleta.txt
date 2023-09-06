@@ -1,0 +1,21 @@
+header{
+    background color :#303845
+    rgb:48;56;69
+}
+
+nav{
+    background color:#3C4557
+    rgb:60;69;87
+}
+content{
+    background color:#FFFFFF
+    rgb:255;255;255
+}
+slidebar y asaide{
+    background color:#29303C
+    rgb:41;48;60
+}
+footer{
+    background color:#363D4D
+    rgb:54;61;77
+}
