@@ -1,0 +1,118 @@
+.grid {
+    display: grid;
+    grid-template-columns: 50px 300px;
+    grid-template-rows: 200px 75px;
+}
+
+/*-----------------------------------*/
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+/*-----------------------------------*/
+.grid {
+    display: grid;
+
+    grid-template-columns: 100px repeat(4, 50px) 200px;
+    grid-template-rows: repeat(2, 1fr 2fr);
+
+    /* Equivalente a... */
+    grid-template-columns: 100px 50px 50px 50px 50px 200px;
+    grid-template-rows: 1fr 2fr 1fr 2fr;
+}
+
+/*-----------------------------------*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 600px));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.item {
+    background: black;
+    color: white;
+    padding: 1em;
+}
+
+/*-----------------------------------*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    background: grey;
+    gap: 10px;
+}
+
+.item {
+    background: blue;
+    color: #fff;
+    font-size: 2rem;
+}
+
+/*-----------------------------------*/
+.grid {
+    column-gap: 100px;
+    row-gap: 10px;
+}
+
+/*-----------------------------------*/
+.grid {
+    /* gap: <row-gap> <column-gap> */
+    gap: 20px 80px;
+    /* Equivalente a... */
+    row-gap: 20px;
+    column-gap: 80px;
+
+    gap: 40px;
+    /* Equivalente a... */
+    row-gap: 40px;
+    column-gap: 40px;
+}
+
+/*-----------------------------------*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(3, 50px);
+    gap: 10px;
+    background: grey;
+    height: 300px;
+
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.item {
+    padding: 10px;
+    background: black;
+    color: white;
+}
+
+/*-----------------------------------*/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    place-items: center;
+    /* Equivale a... */
+    justify-items: center;
+    align-items: center;
+
+    place-content: center;
+    /* Equivale a... */
+    justify-content: center;
+    align-content: center;
+}
+
+.item:first-child {
+    place-self: end;
+    /* Equivale a... */
+    justify-self: end;
+    align-self: end;
+}

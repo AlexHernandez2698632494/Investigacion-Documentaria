@@ -19,3 +19,6 @@ footer{
     background color:#363D4D
     rgb:54;61;77
 }
+body{
+    background :dde4fd
+}
