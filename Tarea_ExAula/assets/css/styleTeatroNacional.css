@@ -241,29 +241,21 @@ body {
     color: #fff;
 }
 /* Estilos para pantallas medianas (tabletas) */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .contenedor {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "header"
-            "contenido"
-            "sidebar"
-            "nav-secundaria"
-            "widget-1"
-            "widget-2"
-            "widget-3"
-            "widget-4"
-            "widget-5"
-            "widget-6"
-            "widget-7"
-            "widget-8"
-            "widget-9"
-            "footer";
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: 
+          "header header"
+          "contenido sidebar"
+          "widget-1 widget-2"
+          "widget-3 widget-4"
+          "widget-5 widget-6"
+          "widget-7 widget-8"
+          "widget-9 widget-9"
+          "footer footer";
     }
-    .contenedor .sidebar {
-        grid-column: auto;
-    }
-}
+  }
+  
 
 /* Estilos para pantallas pequeñas (celulares) */
 @media (max-width: 480px) {
