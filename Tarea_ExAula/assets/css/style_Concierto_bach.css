@@ -173,31 +173,49 @@ footer {
     color: rgb(0, 0, 0);
 }
 /*------------------------------------------------------*/
-/* Estilos para dispositivos móviles */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
+@media screen  and (min-width: 320px)and (max-width: 520px) {
+    html{
+        width: 100%;
     }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
+    img{
+      width: 100%;
+      border-radius: 15px;
+     }
+     
+    header, footer{
+        width: 95%;
     }
-
-    nav li {
-        margin: 10px 0;
-    }
+   
+   .sidebar {
+    width: 90px;
+    font-size: 10px;
 }
-  /* Estilos responsivos */
-  @media screen and (max-width: 768px) {
-    .story {
-        width: 45%;
-    }
+.story{
+    width: 80%;
+} 
+.content img{
+    width: 280px;
+}
+}
+  
+  /* tablet*/
+  @media screen  and (min-width:521px) and (max-width: 768px) {
+   img{
+    width: 80%;
+   }
+
   }
   
-  @media screen and (max-width: 480px) {
-    .story {
-        width: 100%;
+  /* compu */
+  @media screen  and (min-width:769px){
+    html{
+      font-size: 15px;
+      width: 100%;
+    }
+    img{
+      width: 70%;
+     }
+    .escritorio{
+      display: inline-block;
     }
   }

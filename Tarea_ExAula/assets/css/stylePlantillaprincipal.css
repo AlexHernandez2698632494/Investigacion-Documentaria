@@ -139,6 +139,17 @@ body {
     align-items: center;
     justify-content: center;
 }
+.contenedor .widget-1 a,
+.contenedor .widget-2 a,
+.contenedor .widget-3 a,
+.contenedor .widget-4 a,
+.contenedor .widget-5 a,
+.contenedor .widget-6 a,
+.contenedor .widget-7 a,
+.contenedor .widget-8 a,
+.contenedor .widget-9 a{
+    color: white;
+}
 .contenedor .widget-9 h3 a{
     font-size: 14px;
 }
@@ -186,24 +197,24 @@ body {
     height: 100px;
 }
 .contenedor .widget-4  img{
-    width: 250px;
+    width: 150px;
     height: 100px;
 }
 .contenedor .widget-5  img{
-    width: 250px;
+    width: 150px;
     height: 100px;}
 .contenedor .widget-6  img{
-    width: 250px;
+    width: 150px;
     height: 100px;}
 .contenedor .widget-7  img{
-    width: 250px;
+    width: 150px;
     height: 100px;}
 .contenedor .widget-8  img{
-    width: 250px;
+    width: 150px;
     height: 100px;}
 .contenedor .widget-9  img{
-    width: 190px;
-    height: 90px;}
+    width: 150px;
+    height: 100px;}
 .contenedor .footer {
     background: #363D4D;
     color: #fff;
@@ -228,4 +239,9 @@ body {
 .nav-principal a {
     text-decoration: none;
     color: #fff;
+}
+@media (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

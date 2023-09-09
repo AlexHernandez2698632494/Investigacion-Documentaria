@@ -132,3 +132,30 @@ footer {
     width: 200px;
     height: auto;
 }
+@media (max-width: 768px) {
+    .container img {
+        width: 380px;
+        height: auto;
+    }  
+    .presidente{
+        width: 100%;
+        margin: 10px;
+        padding: 20px;
+    }
+    .presidente img{
+        width: 100%;
+        height: auto;
+    }
+    .presidente h2{
+        font-size: 24px;
+    }
+    .details{
+        width: 100%;
+        margin: 10px;
+        padding: 20px;
+    }
+    .details img{
+        width: 100%;
+        height: auto;
+    }
+}
