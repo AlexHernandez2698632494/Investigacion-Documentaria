@@ -1,0 +1,134 @@
+/* Estilos generales */
+body {
+    font-family: "Bembo Std";
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Menú de navegación */
+.nav-principal {
+    background-color: #3C4557;
+}
+
+.nav-principal ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 2;
+}
+
+.nav-principal li {
+    margin-right: 20px;
+}
+
+.nav-principal a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-principal ul li {
+    border-bottom: 1px solid #3C4557;
+}
+
+.nav-principal ul a {
+    box-sizing: border-box;
+    color: white;
+    background: #3C4557;
+    display: block;
+    width: 100%;
+    padding: 6px 10px;
+    text-decoration: none;
+}
+
+.nav-principal ul ul {
+    height: 0px;
+    overflow: hidden;
+    transition: var(--estado-buda);
+    counter-reset: items;
+}
+
+.nav-principal ul ul li {
+    counter-increment: items;
+}
+
+.nav-principal ul li:hover ul {
+    height: calc(var(--cantidad-items) * var(--cada-item));
+
+    background: rgb(190, 187, 253);
+    background: #525e77
+        /*
+    height: 100%;
+    max-height: calc( counter(items) * var(--cada-item) );
+    */
+}
+
+.nav-principal ul ul a {
+    background: transparent;
+}
+
+/* Contenido principal */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container img {
+    width: 800px;
+    height: 450px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/*-*/
+.presidente {
+    background-color: #ccc;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 38%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+.presidente img{
+    width: 160px;
+    height: auto;
+}
+.presidente h2{
+    font-size: 20px;
+}
+.details{
+    background-color: #ccc;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 28%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+.details img{
+    width: 200px;
+    height: auto;
+}
