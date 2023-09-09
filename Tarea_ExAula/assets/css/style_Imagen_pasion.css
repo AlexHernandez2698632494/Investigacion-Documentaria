@@ -173,3 +173,49 @@ footer {
     flex: 0 0 calc(33.33% - 10px); /* Ajusta el ancho de cada columna */
     margin-right: 10px;
 }
+@media screen  and (min-width: 320px)and (max-width: 520px) {
+    html{
+        width: 100%;
+    }
+    img{
+      width: 100%;
+      border-radius: 15px;
+     }
+     
+    header, footer{
+        width: 95%;
+    }
+   
+   .sidebar {
+    width: 90px;
+    font-size: 10px;
+}
+.story{
+    width: 80%;
+} 
+.content img{
+    width: 280px;
+}
+}
+  
+  /* tablet*/
+  @media screen  and (min-width:521px) and (max-width: 768px) {
+   img{
+    width: 80%;
+   }
+
+  }
+  
+  /* compu */
+  @media screen  and (min-width:769px){
+    html{
+      font-size: 15px;
+      width: 100%;
+    }
+    img{
+      width: 70%;
+     }
+    .escritorio{
+      display: inline-block;
+    }
+  }
