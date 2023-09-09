@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+}
+
+.sidebar {
+    background-color: #888;
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+}
+
+.content {
+    flex: 1;
+    background-color: #ccc;
+    padding: 10px;
+}
+
+aside {
+    background-color: #888;
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+/*--------------------------------------*/
+.nav-principal {
+    background-color: #3C4557;
+}
+
+.nav-principal ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 2;
+}
+
+.nav-principal li {
+    margin-right: 20px;
+}
+
+.nav-principal a {
+    text-decoration: none;
+    color: #fff;
+}
+.nav-principal ul li{
+    border-bottom: 1px solid #3C4557;
+}
+
+.nav-principal ul a{
+    box-sizing: border-box;
+    color: white;
+    background: #3C4557;
+    display: block;
+    width: 100%;
+    padding: 6px 10px;
+    text-decoration: none;
+}
+
+.nav-principal ul ul{
+    height: 0px;
+    overflow: hidden;
+    transition: var(--estado-buda);
+    counter-reset: items;
+}
+.nav-principal ul ul li{
+    counter-increment: items;
+}
+
+
+.nav-principal ul li:hover ul{
+    height: calc( var(--cantidad-items) * var(--cada-item) );
+
+    background: rgb(190, 187, 253); 
+    background: #525e77
+
+    /*
+    height: 100%;
+    max-height: calc( counter(items) * var(--cada-item) );
+    */
+}
+.nav-principal ul ul a{
+    background: transparent;
+}
+/*--------------------*/
+.nav-secundaria ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 16px;
+}
+
+.nav-secundaria ul li{
+    border-bottom: 1px solid #3C4557;
+}
+
+.nav-secundaria ul a{
+    box-sizing: border-box;
+    color: white;
+    background: #3C4557;
+    display: block;
+    width: 100%;
+    padding: 6px 10px;
+    text-decoration: none;
+}
+
+.nav-secundaria ul ul{
+    height: 0px;
+    overflow: hidden;
+    transition: var(--estado-buda);
+    counter-reset: items;
+}
+.nav-secundaria ul ul li{
+    counter-increment: items;
+}
+
+
+.nav-secundaria ul li:hover ul{
+    height: calc( var(--cantidad-items) * var(--cada-item) );
+
+    background: rgb(190, 187, 253); 
+    background: #525e77
+
+    /*
+    height: 100%;
+    max-height: calc( counter(items) * var(--cada-item) );
+    */
+}
+
+
+.nav-secundaria ul ul a{
+    background: transparent;
+}
+/*---------------------------*/
+.story {
+    background-color: #ccc;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+  }
+  #tribe__details__content--54842{
+    color: rgb(0, 0, 0);
+}
+/*------------------------------------------------------*/
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
+  /* Estilos responsivos */
+  @media screen and (max-width: 768px) {
+    .story {
+        width: 45%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .story {
+        width: 100%;
+    }
+  }
